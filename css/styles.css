@@ -1,1 +1,233 @@
+/* geral */
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: helvetiva, sans-serif;
+  background-color: #fafafa;
+}
+a {
+  text-decoration: none;
+}
+
+/* conteudo principal */
+
+.main-container {
+  display: flex;
+  margin-top: 20px;
+}
+.banner-container,
+.form-container {
+  flex: 1 1 0;
+  width: 50%;
+}
+
+.banner-container {
+  text-align: right;
+}
+
+.banner-container img {
+  margin-right: -15px;
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-container .form-box,
+.form-container .register-box {
+  background-color: #fff;
+  width: 350px;
+  margin-top: 30px;
+  border: 1px solid #dbdbdb;
+}
+
+/* form de login  */
+
+.form-box .logo-insta {
+  width: 175px;
+  height: 51px;
+  margin: 50px auto 32px auto;
+}
+
+.form-box .form-login input {
+  background-color: #fafafa;
+  display: block;
+  font-size: 12px;
+  border-radius: 3px;
+  width: 268px;
+  margin: 5px auto;
+  border: 1px solid #dbdbdb;
+  padding: 12px 9px;
+}
+
+.form-box .form-login input:focus {
+  outline: none;
+}
+
+.form-box .form-login input[type='submit'] {
+  background-color: #27c4f5;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+
+.form-box .separator {
+  position: relative;
+}
+
+.separator .line {
+  border-top: 1px solid #dbdbdb;
+  width: 268px;
+  margin: 25px auto 35px;
+}
+
+.separator span {
+  position: absolute;
+  background-color: #fafafa;
+  text-transform: uppercase;
+  color: #bbb;
+  width: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form-box .facebook-login {
+  margin-bottom: 25px;
+}
+
+.form-box .facebook-login a {
+  color: #385185;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box .facebook-login img {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.form-box .facebook-login span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-box .forgot-password {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.form-box .forgot-password a {
+  color: #373799;
+}
+
+/* rigister container  */
+
+.form-container .register-box {
+  margin-top: 10px;
+  padding: 25px;
+}
+
+.form-container .register-box p {
+  font-size: 14px;
+  color: #262626;
+}
+
+.form-container .register-box a {
+  font-weight: bold;
+  color: #4a95f6;
+}
+
+/* get app container  */
+
+.form-container .get-app-box {
+  width: 350px;
+  text-align: center;
+}
+
+.form-container .get-app-box p {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #262626;
+}
+
+.form-container .get-app-box img {
+  width: 136px;
+  height: 40px;
+}
+
+/* sessão de rodapé */
+
+footer {
+  text-align: left;
+  width: 1000px;
+  margin: 50px auto;
+}
+
+footer .list-links {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #00376b;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer .copy {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8e8e8e;
+  text-align: center;
+}
+
+@media (max-width: 450px) {
+  .banner-container {
+    display: none;
+  }
+
+  .main-container,
+  .form-container {
+    margin-top: 0;
+  }
+
+  .form-container,
+  .form-box,
+  .register-box,
+  .get-app-box {
+    margin: 0 auto;
+    width: 100%;
+    border: none;
+  }
+
+  footer {
+    width: 90%;
+    text-align: center;
+  }
+
+  footer ul li {
+    margin-bottom: 10px;
+  }
+}
